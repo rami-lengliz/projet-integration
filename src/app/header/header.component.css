@@ -1,0 +1,90 @@
+.scroll{
+    color: white;
+    transition: 0.4s;
+    position: sticky;
+    top: 0px;
+    z-index: 5;
+    background-color: #123b7c;
+}
+.scrolled{
+    background-color: #0e2d5f;
+}
+.content {
+    width: 77.38%;
+    margin: auto;
+}
+
+.nav-barr,.center ,.right {
+    display: flex;
+}
+.logo{
+    display: flex;
+}
+#logo-img{
+    margin-top: 10px;
+    width: 70px;
+    height: 50px;
+}
+.name {
+    padding: 20px;
+}
+.center{
+    margin: auto;
+}
+.right{
+    margin-top: 6.5px;
+}
+#getstar{
+    background-color: #007FFF;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    height: 20px;
+    margin-top: 10px;
+    display: inline-flex;
+    align-items: center;
+}
+
+.center h5 {
+    display: inline-block;
+    margin: 10px;
+    transition: transform 0.4s cubic-bezier(0.25, 1.5, 0.5, 1), color 0.4s ease-in-out;
+}
+
+.center h5 a {
+    color: white;
+    text-decoration: none;
+    position: relative;
+    display: inline-block;
+    transition: color 0.4s ease-in-out;
+}
+
+.center h5:hover {
+    transform: translateY(-5px) scale(1.1);
+    color: #ffcc00; 
+}
+
+.center h5:hover a {
+    color: #ffcc00; /* Matches the hover color for consistency */
+}
+
+.center h5 a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background: #ffcc00; /* A bright underline that contrasts with the blue background */
+    bottom: -5px;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.center h5:hover a::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+
+

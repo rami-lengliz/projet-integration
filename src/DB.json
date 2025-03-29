@@ -1,0 +1,155 @@
+{
+  "Products": [
+    {
+      "id": "1",
+      "img": "assets/property-1.jpg",
+      "price": 1000,
+      "name": "Fadi's Realty",
+      "location": "kelibia Wra darchabeb 8090",
+      "rooms": "1",
+      "baths": "1",
+      "measure": "12"
+    },
+    {
+      "id": "1732749152769",
+      "img": "assets/property-2.jpg",
+      "price": "2000",
+      "name": "Rami",
+      "location": "kelibia Wra darchabeb 8090",
+      "rooms": "2",
+      "baths": "2",
+      "measure": "11"
+    },
+    {
+      "id": "1732749186199",
+      "img": "assets/property-3.jpg",
+      "price": "3000",
+      "name": "Khalil",
+      "location": "kelibia Wra darchabeb 8090",
+      "rooms": "3",
+      "baths": "3",
+      "measure": "11"
+    },
+    {
+      "id": "1732749208603",
+      "img": "assets/property-4.jpg",
+      "price": "4000",
+      "name": "Charfa",
+      "location": "kelibia Wra darchabeb 8090",
+      "rooms": "4",
+      "baths": "4",
+      "measure": "11"
+    },
+    {
+      "id": "1732749229353",
+      "img": "assets/property-5.jpg",
+      "price": "5000",
+      "name": "Yassine",
+      "location": "kelibia Wra darchabeb 8090",
+      "rooms": "5",
+      "baths": "5",
+      "measure": "11"
+    },
+    {
+      "id": "1732749265097",
+      "img": "assets/property-6.jpg",
+      "price": "6000",
+      "name": "Walid",
+      "location": "kelibia Wra darchabeb 8090",
+      "rooms": "6",
+      "baths": "6",
+      "measure": "11"
+    },
+    {
+      "id": "1732749301792",
+      "img": "assets/property-7.jpg",
+      "price": "7000",
+      "name": "Anas",
+      "location": "kelibia chiwa 8090",
+      "rooms": "7",
+      "baths": "7",
+      "measure": "11"
+    },
+    {
+      "id": "1733336587876",
+      "img": "assets/property-3.jpg",
+      "price": "1",
+      "name": "safwen mhimdi",
+      "location": "7ay tadhamoun",
+      "rooms": "4",
+      "baths": "1",
+      "measure": "14"
+    },
+    {
+      "id": "1736541650064",
+      "img": "assets/property-3.jpg",
+      "price": "880",
+      "name": "takala",
+      "location": "kelibia",
+      "rooms": "6",
+      "baths": "2",
+      "measure": "11"
+    }
+  ],
+  "Users": [
+    {
+      "name": "admin",
+      "email": "admin",
+      "phone": "12345678",
+      "password": "admin",
+      "id": "1"
+    },
+    {
+      "name": "fadi bencheikh",
+      "email": "fadibencheikh4@gmail.com",
+      "phone": "26416918",
+      "password": "123",
+      "id": "2"
+    },
+    {
+      "name": "linda",
+      "email": "linda@gmail.com",
+      "phone": "888888888",
+      "password": "123",
+      "id": "3"
+    },
+    {
+      "name": "yosra",
+      "email": "yosra@gmail.com",
+      "phone": "123456789",
+      "password": "123",
+      "id": "4"
+    },
+    {
+      "id": "b453",
+      "name": "rami lengliz",
+      "email": "dsafds823@gmail.com",
+      "phone": "28887569",
+      "password": "123"
+    }
+  ],
+  "basket": [
+    {
+      "id": "1",
+      "img": "assets/property-7.jpg",
+      "price": "7000",
+      "name": "Anas",
+      "location": "kelibia chiwa 8090",
+      "rooms": "7",
+      "baths": "7",
+      "measure": "11",
+      "UserID": 2
+    },
+    {
+      "id": "0",
+      "img": "assets/property-2.jpg",
+      "price": "2000",
+      "name": "Rami",
+      "location": "kelibia Wra darchabeb 8090",
+      "rooms": "2",
+      "baths": "2",
+      "measure": "11",
+      "UserID": 2
+    }
+  ]
+}

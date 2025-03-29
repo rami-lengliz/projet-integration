@@ -1,0 +1,26 @@
+<body>
+    <div class="Registration">
+        <form action="" [formGroup]="signupForm" (ngSubmit)="submitDetails()">
+            <h1 class="title">Registration</h1>
+            <input id="input3"  class="input-filed" type="text" name="name" formControlName="name" placeholder="Enter your name"><i id="i3" class='fas fa-user' style="font-weight: normal;"></i><br>
+            
+            
+            <input id="input4"  class="input-filed" type="email" name="email" formControlName="email" placeholder="Enter your email"><i id="i4" class='fas fa-envelope' style="position: absolute;top: 175px;font-weight: normal;"></i><br>
+            
+            
+            <input id="input5" class="input-filed" type="tel" name="phone" formControlName="phone" placeholder="Enter your phone number"><i id="i5" class='fas fa-phone-alt' style="position: absolute;top: 248px;"></i>     <br>
+            
+            
+            <input id="input6" class="input-filed" type="password" name="password" formControlName="password" placeholder="Create a passowrd"><i id="i6" class='fas fa-lock' style="position: absolute;top: 318px;"></i>     <br>
+            
+            
+            <input id="input7" class="input-filed pwd" type="password" name="Confirm-passowrd" formControlName="confirmPassword" placeholder="Confirm passowrd"><i id="ipwd2" class='fas fa-lock' style="position: absolute;top: 393px;"></i>   <i (click)="togglePasswordVisibility()" class='fas fa-eye-slash eyeSlashed' style="position: absolute;top: 393px;left: 345px;"></i>  <i (click)="togglePasswordVisibility()" class='far fa-eye eye' style="position: absolute;top: 393px;left: 345px;display: none;"></i><br>
+            
+            
+            <input class="checkbox" type="checkbox" name="checkbox"><label class="terms" for="">I accept all terms & conditions</label><br>
+            <button type="submit" class="btn" name="button" [disabled]="signupForm.invalid">Sign Up</button>
+            <p class="Not-meembre">Already have an account? <a class="login-now" routerLink="/login">Login now</a></p>
+        </form>
+    </div>
+
+</body>

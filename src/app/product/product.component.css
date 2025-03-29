@@ -1,0 +1,285 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f4f4f4;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 15px;
+}
+
+.product-box {
+  display: flex;
+  border: 1px solid #bbb6b6;
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.product-image {
+  min-height: 300px;
+  background: #f9f9f9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.product-image img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.product-image .tag {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: #fa9442;
+  color: #fff;
+  font-size: 12px;
+  padding: 5px 10px;
+  border-radius: 20px;
+}
+
+.product-details {
+  flex: 1 1 60%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.product-name {
+  margin: 0 0 10px;
+}
+
+.product-name a {
+  text-decoration: none;
+  color: #333;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.product-name span {
+  display: block;
+  color: #666;
+  font-size: 16px;
+  margin-top: 5px;
+}
+
+.price {
+  color: #21c2f8;
+  font-size: 24px;
+  font-weight: bold;
+  margin: 15px 0;
+}
+
+.description {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.product-actions {
+  margin-top: 15px;
+}
+
+.product-actions .btn {
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  padding: 10px 20px;
+  margin-right: 10px;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.add-to-cart {
+  background: #d9534f;
+}
+
+.more-info {
+  background: #5bc0de;
+}
+
+.rating {
+  font-size: 14px;
+  color: #f0ad4e;
+  margin-top: 15px;
+}
+
+.star {
+  color: #fa9442;
+  margin-right: 2px;
+}
+
+.star.half {
+  color: #f0ad4e;
+}
+
+.star.empty {
+  color: #ccc;
+}
+
+@media (max-width: 768px) {
+  .product-box {
+    flex-direction: column;
+  }
+
+  .product-image,
+  .product-details {
+    flex: 1 1 100%;
+  }
+}
+
+
+
+/*
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f4f4f4;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 15px;
+}
+
+.product-box {
+  position: relative;
+  max-width: 400px;
+  margin: auto;
+  border: 1px solid #ddd;
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.product-image {
+  position: relative;
+  overflow: hidden;
+}
+
+.product-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.product-image .product-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  padding: 20px;
+  text-align: center;
+}
+
+.product-image:hover .product-overlay {
+  opacity: 1;
+}
+
+.product-image .tag {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: #fa9442;
+  color: #fff;
+  font-size: 12px;
+  padding: 5px 10px;
+  border-radius: 20px;
+  z-index: 2;
+}
+
+.product-overlay .product-name a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.product-overlay .product-name span {
+  display: block;
+  font-size: 14px;
+  color: #ddd;
+}
+
+.product-overlay .price {
+  color: #21c2f8;
+  font-size: 24px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.product-overlay .description {
+  font-size: 14px;
+  color: #ccc;
+  margin: 10px 0;
+}
+
+.product-overlay .product-actions {
+  margin: 15px 0;
+}
+
+.product-overlay .btn {
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  background: #d9534f;
+  padding: 10px 15px;
+  margin: 5px;
+  border-radius: 4px;
+  font-size: 14px;
+  transition: background 0.3s ease;
+}
+
+.product-overlay .btn.more-info {
+  background: #5bc0de;
+}
+
+.product-overlay .btn:hover {
+  background: #c9302c;
+}
+
+.product-overlay .btn.more-info:hover {
+  background: #31b0d5;
+}
+
+.rating {
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.star {
+  color: #fa9442;
+  margin-right: 2px;
+}
+
+.star.half {
+  color: #f0ad4e;
+}
+
+.star.empty {
+  color: #ccc;
+}
+*/

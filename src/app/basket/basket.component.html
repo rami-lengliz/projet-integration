@@ -1,0 +1,21 @@
+<body>
+  <div class="cart-container">
+    <h1 class="cart-title">Your Shopping Cart</h1>
+    <div *ngFor="let dar of _shared.filteredBasketDars" class="cart-items">
+      <div class="cart-item">
+        <img [src]="dar.img" alt="Product" class="item-image">
+        <div class="item-details">
+          <h2 class="item-name">{{dar.name}}</h2>
+          <p class="item-price">${{dar.price}}</p>
+        </div>
+        <button (click)="this._shared.deletee(dar.id)" class="remove-btn" style="cursor: pointer;">Remove</button>
+      </div>
+    </div>
+    <div class="cart-summary">
+      <h2>Order Summary</h2>
+      <p class="summary-item"><span>Total Items:</span> <span>{{_shared.getTotalItems()}}</span></p>
+      <p class="summary-item"><span>Total Price:</span> <span>${{_shared.getTotalPrice()}}</span></p>
+      <button *ngIf="_shared.getTotalItems()!=0" class="checkout-btn" (click)="commandeSucced()">Proceed to Checkout</button>
+    </div>
+  </div>
+</body>

@@ -1,0 +1,16 @@
+<body>
+    <div class="login">
+        <form action="" [formGroup]="loginForm" (ngSubmit)="loginUser()">
+            <h1 class="title">Login</h1>
+            
+            <input id="input1"   class="input-filed" type="email" name="email" formControlName="email" placeholder="Enter your email">   <i id="i1" class='fas fa-envelope' style="font-weight: normal;"></i><br>
+
+            <input id="input2"  class="input-filed pwd" type="password" name="password" formControlName="password" pla ceholder="Enter your passowrd">   <i  id="ipwd1" class='fas fa-lock' style="position: absolute;top: 172px;"></i>   <i (click)="togglePasswordVisibility()" class='fas fa-eye-slash eyeSlashed' style="position: absolute;top: 175px;left: 345px;"></i><i (click)="togglePasswordVisibility()" class='far fa-eye eye' style="position: absolute;top: 175px;left: 345px;display: none;"></i><br>
+
+            <input class="checkbox" type="checkbox" name="checkbox"><label class="remeber-me" for="">Remeber me</label>  <a class="link" href="" name="Forgot-password?">Forgot password?</a><br>
+
+            <button type="submit" class="btn" name="button" [disabled]="loginForm.invalid">Login Now</button>
+            <p class="Not-meembre">Not a meembre? <a class="signup" routerLink="/signup">Signup now</a></p>
+        </form>
+    </div>    
+</body>

@@ -1,0 +1,121 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+  }
+  
+  /* Cart container */
+  .cart-container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Cart title */
+  .cart-title {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  /* Cart items */
+  .cart-items {
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 20px;
+  }
+  
+  .cart-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 0;
+    border-bottom: 1px solid #f1f1f1;
+  }
+  
+  .item-image {
+    width: 100px;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .item-details {
+    flex-grow: 1;
+    margin-left: 15px;
+  }
+  
+  .item-name {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+  }
+  
+  .item-price {
+    color: #888;
+    margin-bottom: 10px;
+  }
+  
+  .quantity {
+    display: flex;
+    align-items: center;
+  }
+  
+  .quantity-btn {
+    background: #ddd;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .quantity-btn:hover {
+    background: #bbb;
+  }
+  
+  .quantity-value {
+    margin: 0 10px;
+  }
+  
+  /* Remove button */
+  .remove-btn {
+    background: #ff4d4d;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .remove-btn:hover {
+    background: #ff1a1a;
+  }
+  
+  /* Cart summary */
+  .cart-summary {
+    text-align: center;
+  }
+  
+  .summary-item {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+  }
+  
+  .checkout-btn {
+    background: #28a745;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  .checkout-btn:hover {
+    background: #218838;
+  }
+  

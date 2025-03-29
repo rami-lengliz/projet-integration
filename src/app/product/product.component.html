@@ -1,0 +1,28 @@
+<body>
+  <div class="container">
+      <div class="product-box" style="display: flex;">
+      <div class="product-image">
+          <img [src]="_shared.detailObj.img" alt="Product Image" />
+      </div>
+      <div class="product-details" >
+          <h5 class="product-name">
+          <a href="#">{{_shared.detailObj.name}}</a>
+          <span>{{_shared.detailObj.location}}</span>
+          </h5>
+          <p class="price">${{_shared.detailObj.price}}</p>
+          <p class="description">This is a brief but detailed product description that highlights key features, benefits, or specifications of the product. Perfect for catching a customer’s attention and providing necessary information.</p>
+          <div class="product-actions">
+          <a (click)="add()" class="btn add-to-cart" style="cursor: pointer;">Add to Cart</a>
+          </div>
+          <div class="rating" style="display: flex;color: black;">
+          <i style="margin: 0 10px;" class='fas fa-couch'></i><h4>S+{{_shared.detailObj.rooms}}</h4>
+          <i style="margin: 0 10px;" class='fas fa-bath'></i><h4>{{_shared.detailObj.baths}} Bath</h4>
+          <i style="margin: 0 10px;" class='fas fa-ruler-horizontal'></i><h4>{{_shared.detailObj.measure}} m</h4>
+          </div>
+      </div>
+      </div>
+  </div>
+</body>  
+  
+
+

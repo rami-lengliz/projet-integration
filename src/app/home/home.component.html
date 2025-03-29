@@ -1,0 +1,44 @@
+<div style="margin-bottom: 50px;">
+    <div class="blue">
+    <img src="assets\njxp4tks.png" alt="" class="bg">
+    <img src="assets\hero.png" alt="" id="dar" height="400" width="506">
+    <h1 class="klem">Find a place <br>where your can <br>be youself.</h1>
+    <p class="ktiba">If you're looking for a place where you can be yourself, don't give <br>up. Keep searching until you find a place that feels like home.</p>
+    
+    
+        
+    </div>
+</div>
+<h2 class="h2">Best home in your city</h2>
+<p class="h4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. <br> illo ducimus nihil atque soluta placeat reiciendis.</p>
+<div class="container">
+
+<div (click)="detalis(dar)" routerLink="/product" class="sub-content" *ngFor="let dar of filteredDars">
+    <div class="market-pics"><div class="love displaynone"><i class="fa-regular fa-heart empty-love"></i><i class="fa-solid fa-heart full-love none"></i></div><img [src]="dar.img" alt=""  class="Houses"></div>
+    <div class="discreption">
+        <div class="price"><h4>${{dar.price}}</h4></div>
+        <div class="realty"><h4>{{dar.name}}</h4></div>
+        <div class="street"><p>{{dar.location}}</p></div>
+    </div>
+    <div class="details">
+        <span></span>
+        <div class="sub-details" id="detail-1"><i class='fas fa-couch'></i><h4>S+{{dar.rooms}}</h4></div>
+        <div class="sub-details" id="detail-2"><i class='fas fa-bath'></i><h4>{{dar.baths}} Bath</h4></div>
+        <div class="sub-details" id="detail-3"><i class='fas fa-ruler-horizontal'></i><h4>{{dar.measure}} m</h4></div>
+    </div>
+</div>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
